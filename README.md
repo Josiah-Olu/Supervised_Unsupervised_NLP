@@ -2,13 +2,13 @@ README: Machine Learning and Data Mining Report
 
 
 
-This report contains the analysis and implementation of three machine learning tasks:
+This repository contains the analysis and implementation of three machine learning tasks:
 
 
 
 1. Task 1: Predicting Obesity Levels
 
-   - Used Decision Tree, KNN, and Azure ML models.
+   - Used Decision Tree and KNN models.
 
    - Explored and preprocessed data for accurate predictions.
 
@@ -30,4 +30,4 @@ This report contains the analysis and implementation of three machine learning t
 
 
 
-The report demonstrates the use of Python (Scikit-learn, NLTK, etc.) and Azure ML for model development, evaluation, and insights. Refer to the full report for detailed implementation and results.
+The report demonstrates the use of Python (Scikit-learn, NLTK, etc.) for model development, evaluation, and insights. 
