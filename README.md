@@ -2,32 +2,63 @@ README: Machine Learning and Data Mining Report
 
 
 
-This repository contains the analysis and implementation of three machine learning tasks:
+**1. Obesity Classification Using Lifestyle Data**  
+
+In this project, I designed an end-to-end machine learning workflow to predict obesity levels based on individual lifestyle, dietary habits, and physical activity, using a dataset from Latin American countries.
+Key steps included:
+
+EDA & Preprocessing: Visualized class distributions, encoded variables, and handled class imbalance using SMOTE.
+
+Feature Engineering: Applied Variance Thresholding and Recursive Feature Elimination (RFECV) with a Random Forest base model.
+
+Modeling (Python): Trained Decision Tree and KNN models, with hyperparameter tuning to boost performance.
+
+Results: Best model (Decision Tree) achieved 97.6% accuracy. Azure’s Decision Forest followed with 88.1% accuracy.
+
+Tools Used: Python (Scikit-learn, Pandas), Azure ML Studio, SMOTE, RFECV, GridSearchCV.	
 
 
+**2. Customer Segmentation Using Clustering Techniques** 
 
-1. Task 1: Predicting Obesity Levels
+This project aimed to uncover patterns in customer demographics, spending, and marketing engagement to enable targeted strategies through unsupervised learning.
 
-   - Used Decision Tree and KNN models.
+Data Processing: Handled nulls, recoded categorical features, aggregated variables (total spend, web visits, etc.), and computed customer age.
 
-   - Explored and preprocessed data for accurate predictions.
+Dimensionality Reduction: Applied PCA for feature compression and 2D visualization.
 
+Clustering Techniques:
 
+K-Means Clustering: Optimal k = 3 (via Elbow method). Achieved silhouette score of 0.47, indicating moderate cohesion.
 
-2. Task 2: Customer Segmentation
+Hierarchical Clustering: Optimal clusters = 4 (via dendrogram). Silhouette score of 0.31, suggesting overlapping clusters.
 
-   - Applied K-Means and Hierarchical Clustering for segmentation.
+Insights: Segments primarily differed by income and spend. Provided recommendations for targeted campaigns.
 
-   - Used PCA for dimensionality reduction and silhouette scores for evaluation.
-
-
-
-3. Task 3: Sentiment Analysis on Steam Reviews
-
-   - Text classification using Multinomial Naïve Bayes (MNB).
-
-   - Sentiment analysis performed using VADER.
+Tools Used: Python (Sklearn, Pandas, Matplotlib), PCA, VarianceThreshold, Silhouette Analysis.
 
 
+**3. Steam Game Review NLP: Constructiveness & Sentiment Analysis**  
 
-The report demonstrates the use of Python (Scikit-learn, NLTK, etc.) for model development, evaluation, and insights. 
+In this NLP-focused project, I explored Steam reviews of the top 10 most-reviewed games to determine review quality and sentiment.
+
+Text Preprocessing: Used tokenization, stopword removal, and stemming (Porter) to clean the review text.
+
+Constructiveness Classification:
+
+Model: Multinomial Naive Bayes trained on Bag-of-Words vectors.
+
+Handling Imbalance: Used SMOTE post-split.
+
+Optimization: GridSearchCV tuning boosted accuracy to 75%.
+
+Evaluation: High precision (0.88) for non-constructive reviews, recall (0.85) for constructive ones.
+
+Sentiment Analysis:
+
+Applied VADER for polarity scoring and classification.
+
+Discovered game-specific sentiment trends (e.g., Terraria had 72% positive sentiment; PUBG had 52% negative).
+
+Generated word clouds for positive and negative feedback.
+
+Tools Used: Python (NLTK, Scikit-learn, VADER), SMOTE, GridSearchCV, WordCloud.
