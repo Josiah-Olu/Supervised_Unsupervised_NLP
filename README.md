@@ -13,9 +13,9 @@ Feature Engineering: Applied Variance Thresholding and Recursive Feature Elimina
 
 Modeling (Python): Trained Decision Tree and KNN models, with hyperparameter tuning to boost performance.
 
-Results: Best model (Decision Tree) achieved 97.6% accuracy. Azure’s Decision Forest followed with 88.1% accuracy.
+Results: Best model (Decision Tree) achieved 97.6% accuracy.
 
-Tools Used: Python (Scikit-learn, Pandas), Azure ML Studio, SMOTE, RFECV, GridSearchCV.	
+Tools Used: Python (Scikit-learn, Pandas), SMOTE, RFECV, GridSearchCV.	
 
 
 **2. Customer Segmentation Using Clustering Techniques** 
